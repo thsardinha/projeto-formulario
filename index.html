@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <h1>Formulário de Pesquisa</h1>
+        <p>Formulário de pesquisa sobre o mercado de trabalho atual.</p>
+    <main>
+        <section class="formulario">
+            <form action="formulario.php" method="get" autocomplete="on">
+                <label class="labels" for="inome">Nome</label> <br>
+                <input class="inputs" type="text" name="nome" id="inome" placeholder="Escreva seu nome completo" minlength="10" required><br>
+                
+                <label class="labels" for="imail">E-mail</label> <br>
+                <input class="inputs" type="email" name="email" id="imail" placeholder="Digite seu melhor e-mail" minlength="15" required><br>
+
+                <label class="labels" for="iidade">Idade</label> <br>
+                <input class="inputs" type="number" name="idade" id="iidade" placeholder="Digite sua idade" required><br>
+
+                <label class="labels" for="iocupacao">Ocupação atual</label> <br>
+                <select name="ocupacao" id="iocupacao" required>
+                    <option value="EST">Estudante</option>
+                    <option value="INT">Trabalho tempo integral</option>
+                    <option value="MP">Trabalho meio período</option>
+                    <option value="PND">Prefiro não dizer</option>
+                    <option value="OTH">Outro</option>
+                </select><br>
+
+                <label class="labels">Você está satisfeito com sua ocupação atual?</label> <br>
+                <input type="radio" name="satisf" id="imsatisf"> <label for="imsatisf">Muito satisfeito</label><br>
+                <input type="radio" name="satisf" id="isatisf"> <label for="isatisf">Satisfeito</label> <br>
+                <input type="radio" name="satisf" id="ipsatisf"> <label for="ipsatisf">Pouco satisfeito</label> <br>
+                <input type="radio" name="satisf" id="insatisf"> <label for="insatisf">Nada satisfeito</label> <br>
+
+                <label class="labels">Quais são as formas que você utiliza para encontrar empregos hoje em dia?</label> <br>
+                <input type="checkbox" name="sites" id="isites"> <label for="isites">Sites de vagas</label> <br>
+                <input type="checkbox" name="google" id="igoogle"> <label for="igoogle">Google</label> <br>
+                <input type="checkbox" name="linkedin" id="ilinkedin"> <label for="ilinkedin">LinkedIn</label> <br>
+                <input type="checkbox" name="redes" id="iredes"> <label for="iredes">Redes Sociais</label> <br>
+                <input type="checkbox" name="curriculo" id="icurriculo"> <label for="icurriculo">Entregar currículo pessoalmente</label> <br>
+
+                <label class="labels" for="imsg">Comentário adicional(opcional):</label>
+                <textarea class="inputs" name="msg" id="imsg" cols="60" rows="10" placeholder="Escreva um comentário relevante" resize="none"></textarea>
+
+                <input class="button" type="submit" value="Enviar respostas">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
